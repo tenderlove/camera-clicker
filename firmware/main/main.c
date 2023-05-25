@@ -21,8 +21,8 @@ static const char TAG[] = "main";
 #define MAX_HTTP_OUTPUT_BUFFER 2048
 #define ESP_INTR_FLAG_DEFAULT 0
 
-#define GPIO_INPUT_IO_0     32
-#define GPIO_INPUT_IO_1     33
+#define GPIO_INPUT_IO_0     18
+#define GPIO_INPUT_IO_1     19
 #define GPIO_INPUT_PIN_SEL  ((1ULL<<GPIO_INPUT_IO_0) | (1ULL<<GPIO_INPUT_IO_1))
 
 static QueueHandle_t tx_task_queue;
