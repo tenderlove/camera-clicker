@@ -139,7 +139,7 @@
 
   (footprint "LED_SMD:LED_1206_3216Metric" (layer "F.Cu")
     (tstamp 00356220-d928-4e6e-93c1-8aa4c4e4d7cd)
-    (at 138.4 96.7 -90)
+    (at 143.97 96.3 -90)
     (descr "LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "LED")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -197,7 +197,7 @@
 
   (footprint "Espressif:ESP32-MINI-1" (layer "F.Cu")
     (tstamp 03686358-4804-4ebb-9635-7542d55f1dae)
-    (at 139.53 74.1 -90)
+    (at 145.1 73.7 -90)
     (descr "ESP32-MINI-1: https://www.espressif.com/sites/default/files/documentation/esp32-mini-1_datasheet_en.pdf")
     (tags "ESP32-MINI-1")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -411,10 +411,10 @@
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
-          (xy 146.33 80.7)
-          (xy 146.33 67.5)
-          (xy 151.73 67.5)
-          (xy 151.73 80.7)
+          (xy 151.9 80.3)
+          (xy 151.9 67.1)
+          (xy 157.3 67.1)
+          (xy 157.3 80.3)
         )
       )
     )
@@ -427,7 +427,7 @@
 
   (footprint "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm" (layer "F.Cu")
     (tstamp 0574e920-9eee-48f5-b87e-222f4cdf2530)
-    (at 130.99 89.7)
+    (at 136.56 89.3)
     (descr "8-Lead Plastic WSON, 2x2mm Body, 0.5mm Pitch, WSON-8, http://www.ti.com/lit/ds/symlink/lm27761.pdf")
     (tags "WSON 8 1EP")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -497,7 +497,7 @@
 
   (footprint "Button_Switch_THT:SW_CuK_OS102011MA1QN1_SPDT_Angled" (layer "F.Cu")
     (tstamp 0f202cd4-e565-4759-b01b-2397ec1cfa95)
-    (at 149.93 60 90)
+    (at 155.5 59.6 90)
     (descr "CuK miniature slide switch, OS series, SPDT, right angle, http://www.ckswitches.com/media/1428/os.pdf")
     (tags "switch SPDT")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -563,7 +563,7 @@
 
   (footprint "Resistor_SMD:R_1206_3216Metric" (layer "F.Cu")
     (tstamp 1d464bca-29ce-4248-8e7f-e5a901e83139)
-    (at 134.83 107.3375 90)
+    (at 140.4 106.9375 90)
     (descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -617,7 +617,7 @@
 
   (footprint "Resistor_SMD:R_1206_3216Metric" (layer "F.Cu")
     (tstamp 20d7d3fb-015b-4c2a-88e6-aaa6e71a854c)
-    (at 145.43 145.8 90)
+    (at 151 145.2 90)
     (descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -671,7 +671,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tstamp 213c739b-8858-4483-bd1c-e5774a80fe42)
-    (at 129.59 87.7)
+    (at 135.16 87.3)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -725,7 +725,7 @@
 
   (footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" (layer "F.Cu")
     (tstamp 27ddc996-f937-47f1-82c3-86a385b8860b)
-    (at 150.43 110.85 180)
+    (at 156 110.45 180)
     (descr "Through hole straight pin header, 1x06, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x06 2.54mm single row")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -797,7 +797,7 @@
 
   (footprint "CameraClickerFootprints:EVPAX-A1A" (layer "F.Cu")
     (tstamp 2eae0d8e-e950-4ea4-956a-101be96ac42a)
-    (at 138.52 57.7)
+    (at 144.09 57.3)
     (property "Sheetfile" "camera-clicker.kicad_sch")
     (property "Sheetname" "")
     (property "ki_description" "Single Pole Single Throw (SPST) switch, separate symbol")
@@ -830,7 +830,7 @@
 
   (footprint "Button_Switch_THT:SW_PUSH_6mm" (layer "F.Cu")
     (tstamp 3524ec6a-41e4-42e2-bdc5-b5ebaf3e9ed0)
-    (at 149.43 138.6 180)
+    (at 155 138.2 180)
     (descr "https://www.omron.com/ecb/products/pdf/en-b3f.pdf")
     (tags "tact sw push 6mm")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -912,7 +912,7 @@
 
   (footprint "LED_SMD:LED_1206_3216Metric" (layer "F.Cu")
     (tstamp 35eba631-acfd-4f51-ac3b-bb1d4c1da520)
-    (at 138.4 91.5 -90)
+    (at 143.97 91.1 -90)
     (descr "LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "LED")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -970,7 +970,7 @@
 
   (footprint "Package_TO_SOT_SMD:SOT-89-3" (layer "F.Cu")
     (tstamp 4662b529-2812-4680-890d-003158ed230e)
-    (at 137.93 118.6 90)
+    (at 143.5 118.2 90)
     (descr "SOT-89-3, http://ww1.microchip.com/downloads/en/DeviceDoc/3L_SOT-89_MB_C04-029C.pdf")
     (tags "SOT-89-3")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -979,7 +979,7 @@
     (property "ki_keywords" "Fixed Voltage Regulator 1A Positive LDO")
     (path "/ca85cb0c-71b8-485c-a50f-2f70b59f9e2e")
     (attr smd)
-    (fp_text reference "U4" (at 2.9 -0.23 180) (layer "F.SilkS")
+    (fp_text reference "U4" (at 2.9 -0.23) (layer "F.SilkS")
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3cb63905-459c-465f-adef-0ae1aacc67de)
     )
@@ -1049,7 +1049,7 @@
 
   (footprint "Resistor_SMD:R_1206_3216Metric" (layer "F.Cu")
     (tstamp 4db1f54c-a6d5-40b1-a020-bbec7d56d332)
-    (at 146.23 131)
+    (at 151.8 130.6)
     (descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -1103,7 +1103,7 @@
 
   (footprint "Capacitor_SMD:C_1206_3216Metric" (layer "F.Cu")
     (tstamp 522b55d6-3f8b-4662-830a-8a34c1d1e1a0)
-    (at 140.08 100.6 180)
+    (at 145.65 100.2 180)
     (descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -1157,7 +1157,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tstamp 5f224a65-b70b-49e3-a3c4-08a2980597ce)
-    (at 131.2 91.8)
+    (at 136.77 91.4)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -1211,7 +1211,7 @@
 
   (footprint "Capacitor_SMD:C_1206_3216Metric" (layer "F.Cu")
     (tstamp 7ed859db-8720-4ea1-8b9d-b19251efbd7f)
-    (at 140.73 63 180)
+    (at 146.3 62.6 180)
     (descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -1265,7 +1265,7 @@
 
   (footprint "Capacitor_SMD:C_1206_3216Metric" (layer "F.Cu")
     (tstamp 8847fb78-2637-4259-a89f-37975b0cd708)
-    (at 142.08 119.15 90)
+    (at 147.65 118.75 90)
     (descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -1319,7 +1319,7 @@
 
   (footprint "Resistor_SMD:R_1206_3216Metric" (layer "F.Cu")
     (tstamp 88f133d2-5faf-4aaa-9f0e-e74095d588e9)
-    (at 141.1 96.6 90)
+    (at 146.67 96.2 90)
     (descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -1373,7 +1373,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tstamp 8c7ad4d6-e594-485b-aab4-b3e135c0d2db)
-    (at 128.99 91.8)
+    (at 134.56 91.4)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -1427,7 +1427,7 @@
 
   (footprint "Connector_USB:USB_C_Receptacle_GCT_USB4085" (layer "F.Cu")
     (tstamp a7c46536-b533-4674-9cda-8e16c9e6e6f9)
-    (at 135.455 142.575)
+    (at 141.025 141.75)
     (descr "USB 2.0 Type C Receptacle, https://gct.co/Files/Drawings/USB4085.pdf")
     (tags "USB Type-C Receptacle Through-hole Right angle")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -1531,7 +1531,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tstamp b0609a27-f13c-4f2c-a347-bc9cf47f5a03)
-    (at 128.59 90.01 -90)
+    (at 134.16 89.61 -90)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -1585,7 +1585,7 @@
 
   (footprint "Capacitor_SMD:C_1206_3216Metric" (layer "F.Cu")
     (tstamp bed23da5-3a23-4f38-9eee-0413408fa7a8)
-    (at 140.73 65.7 180)
+    (at 146.3 65.3 180)
     (descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -1639,7 +1639,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tstamp c977d47e-c337-415a-b4ee-d3951e0f2d7a)
-    (at 132.08 87.7 180)
+    (at 137.65 87.3 180)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -1693,7 +1693,7 @@
 
   (footprint "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" (layer "F.Cu")
     (tstamp cabf43bf-9232-4c5a-8186-d00ef060abd2)
-    (at 139.63 107.4375 -90)
+    (at 145.2 107.0375 -90)
     (descr "TSSOP, 14 Pin (JEDEC MO-153 Var AB-1 https://www.jedec.org/document_search?search_api_views_fulltext=MO-153), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "TSSOP SO")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -1706,7 +1706,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3d8e262f-4651-4155-88f4-c42a2135ed87)
     )
-    (fp_text value "MCP2221AxST" (at 5.7 0.1 -180) (layer "F.Fab")
+    (fp_text value "MCP2221AxST" (at 5.7 0.1) (layer "F.Fab")
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 64bfe7f9-70f3-4109-8ef4-d11628efe063)
     )
@@ -1777,7 +1777,7 @@
 
   (footprint "Button_Switch_THT:SW_PUSH_6mm" (layer "F.Cu")
     (tstamp cbb86a63-0d9a-4568-9303-be4059efe69e)
-    (at 133.88 138.75 180)
+    (at 139.45 138.35 180)
     (descr "https://www.omron.com/ecb/products/pdf/en-b3f.pdf")
     (tags "tact sw push 6mm")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -1859,7 +1859,7 @@
 
   (footprint "Resistor_SMD:R_1206_3216Metric" (layer "F.Cu")
     (tstamp ce5fb970-2347-4e05-8400-a6bcc09ac25b)
-    (at 131.33 145.8 -90)
+    (at 136.9 145.2 -90)
     (descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -1913,7 +1913,7 @@
 
   (footprint "Resistor_SMD:R_1206_3216Metric" (layer "F.Cu")
     (tstamp d0aa5dd6-fbba-41b9-9dd0-749627e4e614)
-    (at 137.23 136.1 -90)
+    (at 142.8 135.7 -90)
     (descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -1967,7 +1967,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tstamp d3b2a06b-4cf9-4cbd-bf21-eadecfd08cfd)
-    (at 133.79 90.5)
+    (at 139.36 90.1)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -2021,7 +2021,7 @@
 
   (footprint "Capacitor_SMD:C_1206_3216Metric" (layer "F.Cu")
     (tstamp f4c0f4ce-f9d7-4916-b4bc-ff32086277e2)
-    (at 133.78 119.15 -90)
+    (at 139.35 118.75 -90)
     (descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -2075,7 +2075,7 @@
 
   (footprint "Resistor_SMD:R_1206_3216Metric" (layer "F.Cu")
     (tstamp f668a30d-931b-4cbd-acff-634aff4edfad)
-    (at 141.1 91.5 90)
+    (at 146.67 91.1 90)
     (descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -2129,7 +2129,7 @@
 
   (footprint "Battery:BatteryHolder_Keystone_1042_1x18650" (layer "B.Cu")
     (tstamp d568de17-f54c-4823-adbe-7973500f997b)
-    (at 135.63 87 -90)
+    (at 141.2 86.6 -90)
     (descr "Battery holder for 18650 cylindrical cells http://www.keyelco.com/product.cfm/product_id/918")
     (tags "18650 Keystone 1042 Li-ion")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -2220,7 +2220,7 @@
 
   (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" (layer "B.Cu")
     (tstamp dd1452b2-c83c-433a-8714-9e7a9b123bca)
-    (at 135.63 89.2 -90)
+    (at 141.2 88.8 -90)
     (descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (property "Sheetfile" "camera-clicker.kicad_sch")
@@ -2272,24 +2272,24 @@
     )
   )
 
-  (gr_rect (start 124.43 42.4) (end 152.43 148.7)
+  (gr_rect (start 130 42) (end 158 148)
     (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") (tstamp 9490a388-9fc2-404f-979d-d458b0f8e59e))
-  (gr_text "GND" (at 145.804762 98.8375) (layer "F.SilkS") (tstamp 5021ef95-f9a8-42aa-9156-7246410779d6)
+  (gr_text "GND" (at 151.374762 98.4375) (layer "F.SilkS") (tstamp 5021ef95-f9a8-42aa-9156-7246410779d6)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
   )
-  (gr_text "RX" (at 146.9 103.9175) (layer "F.SilkS") (tstamp 552e89f5-5942-40ba-875c-222a80688dea)
+  (gr_text "RX" (at 152.47 103.5175) (layer "F.SilkS") (tstamp 552e89f5-5942-40ba-875c-222a80688dea)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
   )
-  (gr_text "+5v" (at 145.9 111.5375) (layer "F.SilkS") (tstamp b8f8fcbf-403b-4c33-aeba-fb8fc2c3de41)
+  (gr_text "+5v" (at 151.47 111.1375) (layer "F.SilkS") (tstamp b8f8fcbf-403b-4c33-aeba-fb8fc2c3de41)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
   )
-  (gr_text "TX" (at 147.138095 101.3775) (layer "F.SilkS") (tstamp bb12557a-b719-4c4d-b6c6-43642d0aab12)
+  (gr_text "TX" (at 152.708095 100.9775) (layer "F.SilkS") (tstamp bb12557a-b719-4c4d-b6c6-43642d0aab12)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
   )
-  (gr_text "+BATT" (at 144.233333 106.4575) (layer "F.SilkS") (tstamp f36cab3a-2772-4eb9-977f-5fc0da1c7d6c)
+  (gr_text "+BATT" (at 149.803333 106.0575) (layer "F.SilkS") (tstamp f36cab3a-2772-4eb9-977f-5fc0da1c7d6c)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
   )
-  (gr_text "+3.3v" (at 144.471429 108.9975) (layer "F.SilkS") (tstamp fb49fac1-4c8f-4f51-b6ed-819bdadf7fce)
+  (gr_text "+3.3v" (at 150.041429 108.5975) (layer "F.SilkS") (tstamp fb49fac1-4c8f-4f51-b6ed-819bdadf7fce)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
   )
 
