@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/kicad-espressif/footprints/Espressif.pretty")(options "")(descr ""))
+  (lib (name "switch-footprints")(type "KiCad")(uri "${KIPRJMOD}/switch-footprints.pretty")(options "")(descr ""))
+  (lib (name "CameraClickerFootprints")(type "KiCad")(uri "${KIPRJMOD}/CameraClickerFootprints.pretty")(options "")(descr ""))
+)
