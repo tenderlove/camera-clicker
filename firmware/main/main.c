@@ -90,6 +90,34 @@ void button_task(void *pvParameter)
     }
 }
 
+esp_err_t cam_button(char * action)
+{
+    char local_response_buffer[MAX_HTTP_OUTPUT_BUFFER] = {0};
+
+    esp_http_client_config_t config = {
+        .host = "192.168.0.10",
+        .path = "/exec_shutter.cgi",
+        .query = action,
+        .event_handler = _http_event_handler,
+        .user_data = local_response_buffer,        // Pass address of local buffer to get response
+        .disable_auto_redirect = true,
+    };
+
+    esp_http_client_handle_t client = esp_http_client_init(&config);
+
+    // GET
+    esp_err_t err = esp_http_client_perform(client);
+    if (err == ESP_OK) {
+        ESP_LOGI(TAG, "HTTP GET Status = %d, content_length = %"PRIu64,
+                esp_http_client_get_status_code(client),
+                esp_http_client_get_content_length(client));
+    } else {
+        ESP_LOGE(TAG, "HTTP GET request failed: %s", esp_err_to_name(err));
+    }
+
+    return err;
+}
+
 void
 transmit_task(void *arg)
 {
@@ -123,21 +151,110 @@ transmit_task(void *arg)
                     } else {
                         ESP_LOGE(TAG, "HTTP GET request failed: %s", esp_err_to_name(err));
                     }
+                    esp_http_client_cleanup(client);
                 }
 
                 break;
             case GPIO_INPUT_IO_0:
                 if (gpio_get_level(GPIO_INPUT_IO_0)) {
                     printf("button 1 pressed\n");
+                    char * query = "com=1stpush";
+                    esp_http_client_config_t config = {
+                        .host = "192.168.0.10",
+                        .path = "/exec_shutter.cgi",
+                        .query = query,
+                        .event_handler = _http_event_handler,
+                        .user_data = local_response_buffer,        // Pass address of local buffer to get response
+                        .disable_auto_redirect = true,
+                    };
+
+                    esp_http_client_handle_t client = esp_http_client_init(&config);
+
+                    // GET
+                    esp_err_t err = esp_http_client_perform(client);
+                    if (err == ESP_OK) {
+                        ESP_LOGI(TAG, "HTTP GET Status = %d, content_length = %"PRIu64,
+                                esp_http_client_get_status_code(client),
+                                esp_http_client_get_content_length(client));
+                    } else {
+                        ESP_LOGE(TAG, "HTTP GET request failed: %s", esp_err_to_name(err));
+                    }
+                    esp_http_client_cleanup(client);
                 } else {
                     printf("button 1 released\n");
+                    char * query = "com=1strelease";
+                    esp_http_client_config_t config = {
+                        .host = "192.168.0.10",
+                        .path = "/exec_shutter.cgi",
+                        .query = query,
+                        .event_handler = _http_event_handler,
+                        .user_data = local_response_buffer,        // Pass address of local buffer to get response
+                        .disable_auto_redirect = true,
+                    };
+
+                    esp_http_client_handle_t client = esp_http_client_init(&config);
+
+                    // GET
+                    esp_err_t err = esp_http_client_perform(client);
+                    if (err == ESP_OK) {
+                        ESP_LOGI(TAG, "HTTP GET Status = %d, content_length = %"PRIu64,
+                                esp_http_client_get_status_code(client),
+                                esp_http_client_get_content_length(client));
+                    } else {
+                        ESP_LOGE(TAG, "HTTP GET request failed: %s", esp_err_to_name(err));
+                    }
+                    esp_http_client_cleanup(client);
                 }
                 break;
             case GPIO_INPUT_IO_1:
                 if (gpio_get_level(GPIO_INPUT_IO_1)) {
                     printf("button 2 pressed\n");
+                    char * query = "com=2ndpush";
+                    esp_http_client_config_t config = {
+                        .host = "192.168.0.10",
+                        .path = "/exec_shutter.cgi",
+                        .query = query,
+                        .event_handler = _http_event_handler,
+                        .user_data = local_response_buffer,        // Pass address of local buffer to get response
+                        .disable_auto_redirect = true,
+                    };
+
+                    esp_http_client_handle_t client = esp_http_client_init(&config);
+
+                    // GET
+                    esp_err_t err = esp_http_client_perform(client);
+                    if (err == ESP_OK) {
+                        ESP_LOGI(TAG, "HTTP GET Status = %d, content_length = %"PRIu64,
+                                esp_http_client_get_status_code(client),
+                                esp_http_client_get_content_length(client));
+                    } else {
+                        ESP_LOGE(TAG, "HTTP GET request failed: %s", esp_err_to_name(err));
+                    }
+                    esp_http_client_cleanup(client);
                 } else {
                     printf("button 2 released\n");
+                    char * query = "com=2ndrelease";
+                    esp_http_client_config_t config = {
+                        .host = "192.168.0.10",
+                        .path = "/exec_shutter.cgi",
+                        .query = query,
+                        .event_handler = _http_event_handler,
+                        .user_data = local_response_buffer,        // Pass address of local buffer to get response
+                        .disable_auto_redirect = true,
+                    };
+
+                    esp_http_client_handle_t client = esp_http_client_init(&config);
+
+                    // GET
+                    esp_err_t err = esp_http_client_perform(client);
+                    if (err == ESP_OK) {
+                        ESP_LOGI(TAG, "HTTP GET Status = %d, content_length = %"PRIu64,
+                                esp_http_client_get_status_code(client),
+                                esp_http_client_get_content_length(client));
+                    } else {
+                        ESP_LOGE(TAG, "HTTP GET request failed: %s", esp_err_to_name(err));
+                    }
+                    esp_http_client_cleanup(client);
                 }
                 break;
         }
