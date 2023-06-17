@@ -1,0 +1,41 @@
+(footprint "USB_C_Receptacle_Amphenol_10164359-3A" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr smd)
+  (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 8620e27c-41b4-4ddf-945e-6b6eb19c68f6)
+  )
+  (fp_text value "USB_C_Receptacle_Amphenol_10164359-3A" (at 0 1 unlocked) (layer "F.Fab")
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp e4c6ddbb-d903-44e3-a302-4c8754e534a3)
+  )
+  (fp_rect (start -5 -3.7) (end 5 3.7)
+    (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd") (tstamp 207878e8-c169-4f2b-8ae1-a95c9ee74f44))
+
+  (pad "S1" thru_hole oval (at -4.32 -2.775) (size 1.1 1.7) (drill oval 0.6 1.2) (layers "*.Cu" "*.Mask")
+    (thermal_bridge_angle 45) (tstamp cff62c79-5d9d-43ac-b187-a05c2347bad8))
+
+  (pad "S1" thru_hole oval (at 4.32 -2.775) (size 1.1 1.7) (drill oval 0.6 1.2) (layers "*.Cu" "*.Mask")
+    (thermal_bridge_angle 45) (tstamp cff62c79-5d9d-43ac-b187-a05c2347bad8))
+
+  (pad "S1" thru_hole oval (at -4.32 1.025) (size 1.1 1.7) (drill oval 0.6 1.2) (layers "*.Cu" "*.Mask")
+    (thermal_bridge_angle 45) (tstamp cff62c79-5d9d-43ac-b187-a05c2347bad8))
+
+  (pad "S1" thru_hole oval (at 4.32 1.025) (size 1.1 1.7) (drill oval 0.6 1.2) (layers "*.Cu" "*.Mask")
+    (thermal_bridge_angle 45) (tstamp cff62c79-5d9d-43ac-b187-a05c2347bad8))
+
+  (pad "A5" smd rect (at 0.5 -2.775) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 2b993251-80f5-41bd-9281-36b84f34eeea))
+  (pad "A9" smd rect (at 1.52 -2.775) (size 0.76 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 2b993251-80f5-41bd-9281-36b84f34eeea))
+  (pad "A12" smd rect (at 2.75 -2.775) (size 0.8 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 2b993251-80f5-41bd-9281-36b84f34eeea))
+  (pad "B5" smd rect (at -0.5 -2.775) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 2b993251-80f5-41bd-9281-36b84f34eeea))
+  (pad "B9" smd rect (at -1.52 -2.775) (size 0.76 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 2b993251-80f5-41bd-9281-36b84f34eeea))
+  (pad "B12" smd rect (at -2.75 -2.775) (size 0.8 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 2b993251-80f5-41bd-9281-36b84f34eeea))
+
+  (fp_line (start -4.32 -1.80) (end -4.32 0.05)
+    (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 0e85e09a-544a-4a90-a447-3878344de7c9))
+  (fp_line (start 4.32 -1.80) (end 4.32 0.05)
+    (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 0e85e09a-544a-4a90-a447-3878344de7c9))
+
+  (fp_line (start -3.15 -3.7) (end 3.15 -3.7)
+    (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 0e85e09a-544a-4a90-a447-3878344de7c9))
+)
