@@ -4,6 +4,13 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Camera Clicker")
+    (comment 1 "Olympus OM-D Cameras with WiFi")
+    (comment 2 "Apache-2.0 License")
+    (comment 3 "© Aaron Patterson")
+  )
+
   (lib_symbols
     (symbol "CameraClickerLibrary:BQ25170DSGR" (in_bom yes) (on_board yes)
       (property "Reference" "U" (at 0 8.89 0)
