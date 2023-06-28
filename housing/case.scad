@@ -24,13 +24,14 @@ CORNER_D = 5;
 CORNER_W = 5;
 WALL = 1.5;
 
-PUSH_BUTTON_H = 1.4;
+PUSH_BUTTON_H = 1.5; // Increase this to make a larger gap above the button
 PIN_DIAMETER = 1.1;
 BOLT_DIAMETER = 2.3;
 
 BOLT_HEAD_D = 4;
 BOLT_HEAD_Z = 2.1;
 NUT_D = 4.8;
+NUT_Z = 2.1;
 
 MOUNTING_HOLE_X = 24;
 MOUNTING_HOLE_Y = 91;
@@ -68,7 +69,7 @@ module NegativeSpace() {
               CounterSink(BOLT_HEAD_D, BOLT_HEAD_Z, BOLT_DIAMETER, facets=90);
 
             translate([(i * w / 2), (j * d / 2), -WALL - 0.1])
-            CounterSink(NUT_D, 5.1, BOLT_DIAMETER, facets=6);
+            CounterSink(NUT_D, NUT_Z, BOLT_DIAMETER, facets=6);
 
             translate([(i * w / 2), (j * d / 2), -(WALL + 1)]) {
               color("blue")
