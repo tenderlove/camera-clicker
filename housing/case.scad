@@ -4,7 +4,7 @@ H = 25;
 
 PCB_W = W;
 PCB_D = D;
-PCB_H = 1.6;
+PCB_H = 1.8;
 
 BATTERY_W = 22;
 BATTERY_D = 70;
@@ -20,13 +20,20 @@ POWER_SWITCH_W = 5;
 POWER_SWITCH_D = 4;
 POWER_SWITCH_H = 3.5;
 
-CORNER_D = 4.5;
-CORNER_W = 6;
+CORNER_D = 5;
+CORNER_W = 5;
 WALL = 1.5;
 
-PUSH_BUTTON_H = 1.3;
+PUSH_BUTTON_H = 1.4;
 PIN_DIAMETER = 1.1;
-BOLT_DIAMETER = 2.2;
+BOLT_DIAMETER = 2.3;
+
+BOLT_HEAD_D = 4;
+BOLT_HEAD_Z = 2.1;
+NUT_D = 4.8;
+
+MOUNTING_HOLE_X = 24;
+MOUNTING_HOLE_Y = 91;
 
 module NegativeSpace() {
   difference() {
@@ -51,13 +58,22 @@ module NegativeSpace() {
         cube([W, D, PCB_H], center=true);
 
       // Screw holes
-      color("blue")
         for (i = [-1, 1]) {
           for (j = [-1, 1]) {
-            w = 24;
-            d = 91;
-            translate([(i * w / 2), (j * d / 2), -(WALL + 1)])
-              cylinder(H + (WALL * 2) + 2, d = BOLT_DIAMETER, $fn=90);
+            w = MOUNTING_HOLE_X;
+            d = MOUNTING_HOLE_Y;
+
+            translate([(i * w / 2), (j * d / 2), BOLT_HEAD_Z + H - 0.5])
+              rotate(180, [1, 0, 0])
+              CounterSink(BOLT_HEAD_D, BOLT_HEAD_Z, BOLT_DIAMETER, facets=90);
+
+            translate([(i * w / 2), (j * d / 2), -WALL - 0.1])
+            CounterSink(NUT_D, 5.1, BOLT_DIAMETER, facets=6);
+
+            translate([(i * w / 2), (j * d / 2), -(WALL + 1)]) {
+              color("blue")
+                cylinder(H + (WALL * 2) + 2, d = BOLT_DIAMETER, $fn=90);
+            }
           }
         }
     }
@@ -102,9 +118,46 @@ module Bottom() {
     whall = WALL + 1;
     w = (whall) * 2;
     translate([-whall, -whall, -whall])
-      cube([W + w, D + w, BATTERY_H + whall + PCB_H]);
+      cube([W + w, D + w, BATTERY_H + whall + PCB_H - 0.1]);
   }
 }
-Top();
+
+LAYER_HEIGHT = 0.2;
+
+module CounterSink(countersink_d, countersink_z, bolt_d, facets = 6, floating = true) {
+  cylinder(countersink_z, d=countersink_d, $fn=facets);
+
+  if (floating) {
+    // First bridge
+    translate([0, 0, countersink_z + (LAYER_HEIGHT / 2)])
+      intersection() {
+        color("green")
+          cube([bolt_d, countersink_d, LAYER_HEIGHT], center=true);
+      }
+
+    color("blue")
+    // Second bridge
+    translate([0, 0, countersink_z + (LAYER_HEIGHT / 2) + LAYER_HEIGHT])
+      cube([bolt_d, bolt_d, LAYER_HEIGHT], center=true);
+  }
+}
+
+rendering = "full";
+
+if (rendering == "top") {
+  rotate(180, [0, 1, 0])
+    Top();
+}
+
+if (rendering == "bottom") {
+  Bottom();
+}
+
+if (rendering == "full") {
+  Bottom();
+  rotate(180, [0, 1, 0])
+    Top();
+}
 //Bottom();
 //NegativeSpace();
+//
