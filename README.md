@@ -47,7 +47,7 @@ The LEDs are used to indicate charging status, so I don't think they actually ma
 Here's a couple photos of the finished PCB:
 
 <p align="center">
-  <img alt="PCB Top" src="images/P6290024.jpeg" width=200 /> <img alt="PCB Bottom" src="images/P6290026.jpeg" width=200 />
+  <img alt="PCB Top" src="images/P6290024.jpeg" width=300 /> <img alt="PCB Bottom" src="images/P6290026.jpeg" width=300 />
 </p>
 
 ## Firmware
