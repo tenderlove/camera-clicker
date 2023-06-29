@@ -18,27 +18,27 @@ The schematic integrates a recharging circuit, so you can recharge the battery v
 
 Below are the necessary parts:
 
-| Quantity | Part | Size | Value |
+| Quantity | Part | Value | Size |
 | -------- | ---- | ---- | ----- |
-| 1 | [Battery Holder](https://www.digikey.com/en/products/detail/keystone-electronics/1042/2745668) | BatteryHolder_Keystone_1042_1x18650 | |
-| 1 | [Battery](https://www.digikey.com/en/products/detail/zeus-battery-products/PCIFR18650-1500/9828824) | | |
-| 2 | Capacitor | 0402 | 1uf |
-| 1 | Capacitor | 1206 | 22uf |
-| 1 | Capacitor | 1206 | 0.1uf |
-| 2 | LED | 1206 | |
-| 1 | [USB C connector](https://www.digikey.com/en/products/detail/amphenol-cs-fci/10164359-00011LF/18443702) | USB_C_Receptacle_Amphenol_10164359-3A | |
-| 1 | Resistor | 0402 | 82k |
-| 1 | Resistor | 0402 | 3k |
-| 4 | Resistor | 1206 | 10k |
-| 1 | Resistor | 0402 | 70k |
-| 1 | Resistor | 0402 | 2.3k |
-| 2 | Resistor | 1206 | 5.1k |
-| 1 | [Power Switch](https://www.digikey.com/en/products/detail/te-connectivity-alcoswitch-switches/1825232-1/4021554) | | |
-| 2 | [Programming Switches](https://www.digikey.com/en/products/detail/c-k/PTS526-SK15-SMTR2-LFS/10056626) | SW_SPST_PTS526 | |
-| 1 | [Double Action Switch](https://www.digikey.com/en/products/detail/panasonic-electronic-components/EVP-AXBA1A/4930566) | EVPAX-A1A | |
-| 1 | NTC Thermistor | 1206 | 10k NTC |
-| 1 | [Battery Charger](https://www.digikey.com/en/products/detail/texas-instruments/BQ25170DSGR/14124032) | WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm | BQ25170 |
-| 1 | [ESP32](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-MINI-1-N4/13532111) | | |
+| 1 | [Battery Holder](https://www.digikey.com/en/products/detail/keystone-electronics/1042/2745668) |  | BatteryHolder_Keystone_1042_1x18650 |
+| 1 | [Battery](https://www.digikey.com/en/products/detail/zeus-battery-products/PCIFR18650-1500/9828824) |  |  |
+| 2 | Capacitor | 1uf | 0402 |
+| 1 | Capacitor | 22uf | 1206 |
+| 1 | Capacitor | 0.1uf | 1206 |
+| 2 | LED |  | 1206 |
+| 1 | [USB C connector](https://www.digikey.com/en/products/detail/amphenol-cs-fci/10164359-00011LF/18443702) |  | USB_C_Receptacle_Amphenol_10164359-3A |
+| 1 | Resistor | 82k | 0402 |
+| 1 | Resistor | 3k | 0402 |
+| 4 | Resistor | 10k | 1206 |
+| 1 | Resistor | 70k | 0402 |
+| 1 | Resistor | 2.3k | 0402 |
+| 2 | Resistor | 5.1k | 1206 |
+| 1 | [Power Switch](https://www.digikey.com/en/products/detail/te-connectivity-alcoswitch-switches/1825232-1/4021554) |  |  |
+| 2 | [Programming Switches](https://www.digikey.com/en/products/detail/c-k/PTS526-SK15-SMTR2-LFS/10056626) |  | SW_SPST_PTS526 |
+| 1 | [Double Action Switch](https://www.digikey.com/en/products/detail/panasonic-electronic-components/EVP-AXBA1A/4930566) |  | EVPAX-A1A |
+| 1 | NTC Thermistor | 10k NTC | 1206 |
+| 1 | [Battery Charger](https://www.digikey.com/en/products/detail/texas-instruments/BQ25170DSGR/14124032) | BQ25170 | WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm |
+| 1 | [ESP32](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-MINI-1-N4/13532111) |  |  |
 
 You'll find the gerber files in the [pcb folder](pcb).
 Also, I used 10k resistors for the LEDs, but I think it made the LEDs too dim, so maybe 1k is better.
