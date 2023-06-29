@@ -74,3 +74,18 @@ The PCB should fit in the housing like this:
 <p align="center">
   <img alt="Camera Clicker" src="images/P6290021.jpeg" />
 </p>
+
+## Using the Project
+
+When you first turn the clicker on, it will create a WiFi hotspot with the SSID `CameraClicker` and the password `cameraclicker`.
+
+My recommendation is to:
+
+1. Turn on the camera, then enable WiFi client mode
+2. Turn on the camera clicker
+3. Connect to the camera clicker with your phone
+4. Configure the camera clicker with the camera's WiFi settings (they will be displayed on the camera)
+5. Use it!
+
+The camera clicker will remember the camera's WiFi connection information, so you only need to configure it once.
+If it can't connect to the camera for any reason, it will eventually start the WiFi hotspot again so that you can reconfigure it.
