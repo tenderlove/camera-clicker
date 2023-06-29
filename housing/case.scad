@@ -143,6 +143,17 @@ module CounterSink(countersink_d, countersink_z, bolt_d, facets = 6, floating = 
   }
 }
 
+module Button() {
+  BUTTON_H = 6;
+  BUTTON_D = 13;
+  difference() {
+    cylinder(BUTTON_H, d=BUTTON_D, $fn=90);
+
+    translate([0, 0, 2.1])
+    cylinder(BUTTON_H - 2.1, d=PIN_DIAMETER - 0.1, $fn=90);
+  }
+}
+
 rendering = "full";
 
 if (rendering == "top") {
@@ -154,11 +165,13 @@ if (rendering == "bottom") {
   Bottom();
 }
 
-if (rendering == "full") {
-  Bottom();
-  rotate(180, [0, 1, 0])
-    Top();
+if (rendering == "button") {
+  Button();
 }
-//Bottom();
-//NegativeSpace();
-//
+
+if (rendering == "full") {
+  Button();
+  //Bottom();
+  //rotate(180, [0, 1, 0])
+  //  Top();
+}

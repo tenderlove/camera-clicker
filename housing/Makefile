@@ -4,7 +4,7 @@ SLICER = /Applications/Original\ Prusa\ Drivers/PrusaSlicer.app/Contents/MacOS/P
 %.stl: case.scad
 	$(OPENSCAD) -D'rendering="$(basename $@)"' $< -o $@
 
-case.gcode: top.stl bottom.stl
+case.gcode: top.stl bottom.stl button.stl
 	$(SLICER) --center 100,100 --slice --merge $^ --export-gcode --output $@
 
 view: case.gcode
