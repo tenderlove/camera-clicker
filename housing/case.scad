@@ -24,7 +24,7 @@ CORNER_D = 5;
 CORNER_W = 5;
 WALL = 1.5;
 
-PUSH_BUTTON_H = 1.5; // Increase this to make a larger gap above the button
+PUSH_BUTTON_H = 1.3; // Increase this to make a larger gap above the button
 PIN_DIAMETER = 1.1;
 BOLT_DIAMETER = 2.3;
 
@@ -80,7 +80,7 @@ module NegativeSpace() {
     }
 
     translate([PCB_W / 2, D - 13, PCB_Z + PCB_H + PUSH_BUTTON_H])
-      cylinder(H - PCB_Z - PCB_H - PUSH_BUTTON_H, d = 3, $fn = 90);
+      cylinder(H - PCB_Z - PCB_H - PUSH_BUTTON_H, d = 2, $fn = 90);
   }
 
   translate([(PCB_W / 2) - (USB_W / 2), -USB_D, PCB_Z + PCB_H])
@@ -90,8 +90,9 @@ module NegativeSpace() {
     cube([POWER_SWITCH_W, POWER_SWITCH_D, POWER_SWITCH_H]);
 
   // Pin hole
-  translate([PCB_W / 2, D - 13, PCB_Z + PCB_H + PUSH_BUTTON_H])
-    cylinder(5, d = PIN_DIAMETER, $fn = 90);
+  translate([W / 2, D - 18, H])
+    Tab();
+    //cylinder(5, d = PIN_DIAMETER, $fn = 90);
 }
 
 module Box() {
@@ -143,14 +144,15 @@ module CounterSink(countersink_d, countersink_z, bolt_d, facets = 6, floating = 
   }
 }
 
-module Button() {
-  BUTTON_H = 6;
-  BUTTON_D = 13;
+module Tab() {
+  TAB_X = 10;
+  TAB_Y = 20;
+  TAB_Z = WALL + 0.2;
+  translate([-TAB_X / 2, -TAB_Y/2, -0.1])
   difference() {
-    cylinder(BUTTON_H, d=BUTTON_D, $fn=90);
-
-    translate([0, 0, 2.1])
-    cylinder(BUTTON_H - 2.1, d=PIN_DIAMETER - 0.1, $fn=90);
+    cube([TAB_X, TAB_Y, TAB_Z]);
+    translate([1, -0.1, -0.1])
+    cube([TAB_X - 2, TAB_Y - (1 - 0.1), TAB_Z + 0.2]);
   }
 }
 
@@ -165,13 +167,8 @@ if (rendering == "bottom") {
   Bottom();
 }
 
-if (rendering == "button") {
-  Button();
-}
-
 if (rendering == "full") {
-  Button();
-  //Bottom();
-  //rotate(180, [0, 1, 0])
-  //  Top();
+  Bottom();
+  rotate(180, [0, 1, 0])
+    Top();
 }
