@@ -5,7 +5,7 @@ It simply connects to the camera, and then you can use the button to fire the ca
 I've only tested this with my OM-D E-M5 Mark III camera, but I believe it will work with an OM-D camera that uses WiFi for it's remote shutter application.
 
 <p align="center">
-  <img alt="Camera Clicker" src="images/IMG_2563.jpeg" width=200 />
+  <img alt="Camera Clicker" src="images/IMG_2563.jpeg" />
 </p>
 
 In this repository, you'll find [schematics and PCB designs](pcb), [stl files](housing), and the [firmware](firmware) you need.
@@ -20,7 +20,8 @@ Below are the necessary parts:
 
 | Quantity | Part | Size | Value |
 | -------- | ---- | ---- | ----- |
-| 1 | [Battery](https://www.digikey.com/en/products/detail/keystone-electronics/1042/2745668) | BatteryHolder_Keystone_1042_1x18650 | Battery |
+| 1 | [Battery Holder](https://www.digikey.com/en/products/detail/keystone-electronics/1042/2745668) | BatteryHolder_Keystone_1042_1x18650 | |
+| 1 | [Battery](https://www.digikey.com/en/products/detail/zeus-battery-products/PCIFR18650-1500/9828824) | | |
 | 2 | Capacitor | 0402 | 1uf |
 | 1 | Capacitor | 1206 | 22uf |
 | 1 | Capacitor | 1206 | 0.1uf |
@@ -42,3 +43,34 @@ Below are the necessary parts:
 You'll find the gerber files in the [pcb folder](pcb).
 Also, I used 10k resistors for the LEDs, but I think it made the LEDs too dim, so maybe 1k is better.
 The LEDs are used to indicate charging status, so I don't think they actually matter too much.
+
+Here's a couple photos of the finished PCB:
+
+<p align="center">
+  <img alt="PCB Top" src="images/P6290024.jpeg" width=200 /> <img alt="PCB Bottom" src="images/P6290026.jpeg" width=200 />
+</p>
+
+## Firmware
+
+The firmware is in the [firmware](firmware) folder.  It's a standard [ESP IDF](https://github.com/espressif/esp-idf) project.
+In order to flash the ESP32, I used a [POGO Pin Clip](https://www.adafruit.com/product/5433) connected to a [USB to Serial](https://www.sparkfun.com/products/12731) board.
+
+Once you have `esp-idf` installed, you can install the firmware like this:
+
+```
+$ idf.py build flash
+```
+
+Of course, make sure to press the BOOT and RST buttons to put the ESP32 in to programming mode.
+
+## Housing
+
+You can find STL files for the housing in the [housing](housing) folder.
+Just print [`top.stl`](housing/top.stl) and [`bottom.stl`](housing/bottom.stl) and the PCB should fit inside.
+The housing requires four M2 x 25mm bolts, and four 4mm hex nuts.
+
+The PCB should fit in the housing like this:
+
+<p align="center">
+  <img alt="Camera Clicker" src="images/P6290021.jpeg" />
+</p>
