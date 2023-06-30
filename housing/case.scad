@@ -148,11 +148,12 @@ module Tab() {
   TAB_X = 10;
   TAB_Y = 20;
   TAB_Z = WALL + 0.2;
-  translate([-TAB_X / 2, -TAB_Y/2, -0.1])
+  TAB_GAP = 1;
+  translate([-TAB_X / 2, -TAB_Y / 2, -0.1])
   difference() {
     cube([TAB_X, TAB_Y, TAB_Z]);
-    translate([1, -0.1, -0.1])
-    cube([TAB_X - 2, TAB_Y - (1 - 0.1), TAB_Z + 0.2]);
+    translate([TAB_GAP, -0.1, -0.1])
+    cube([TAB_X - (TAB_GAP * 2), TAB_Y - (TAB_GAP - 0.1), TAB_Z + 0.2]);
   }
 }
 
