@@ -12,7 +12,7 @@ In this repository, you'll find [schematics and PCB designs](pcb), [stl files](h
 
 ## Hardware
 
-The hardware is based around the ESP32.  It uses an [LeFePO4 battery](https://www.digikey.com/en/products/detail/zeus-battery-products/PCIFR18650-1500/9828824) to provide power to the ESP32.
+The hardware is based around the ESP32.  It uses an [LiFePO4 battery](https://www.digikey.com/en/products/detail/zeus-battery-products/PCIFR18650-1500/9828824) to provide power to the ESP32.
 I chose this battery because it provides 3.2v which means I don't need a voltage regulator for the ESP32.
 The schematic integrates a recharging circuit, so you can recharge the battery via USB C.
 
