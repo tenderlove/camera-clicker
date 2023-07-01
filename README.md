@@ -2,7 +2,7 @@
 
 This project is a dedicated WiFi client and remote shutter for Olympus OM-D cameras.
 It simply connects to the camera, and then you can use the button to fire the camera shutter.
-I've only tested this with my OM-D E-M5 Mark III camera, but I believe it will work with an OM-D camera that uses WiFi for it's remote shutter application.
+I've only tested this with my OM-D E-M5 Mark III camera, but I believe it will work with any OM-D camera that uses WiFi for it's remote shutter application.
 
 <p align="center">
   <img alt="Camera Clicker" src="images/IMG_2563.jpeg" />
